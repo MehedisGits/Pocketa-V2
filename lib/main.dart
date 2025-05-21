@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pocketa_v2/config/router/routes.dart';
 
 import 'core/local_storage/hive_service.dart';
 import 'core/local_storage/shared_pref_service.dart';
@@ -17,13 +18,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final onboardingCompleted = SharedPrefServices.getOnboardingCompleted();
     return MaterialApp(
       title: 'Pocketa',
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-
-      home: const Scaffold(body: Center(child: Text('Pocketa V2'))),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: appRoutes,
     );
   }
 }
