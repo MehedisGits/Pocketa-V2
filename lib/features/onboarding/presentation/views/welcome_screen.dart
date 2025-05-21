@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pocketa_v2/core/themes/colors.dart';
+import 'package:pocketa_v2/l10n/app_localization.dart';
 import 'package:pocketa_v2/utils/responsive_utils.dart';
 
 import '../../../../core/local_storage/shared_pref_service.dart';
@@ -53,7 +54,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               Spacer(),
               Text(
-                'Welcome to Pocketa!',
+                context.l10n.welcomeMessage,
                 textAlign: TextAlign.center,
                 style: theme.textTheme.titleMedium?.copyWith(
                   fontSize: ResponsiveUtilities.font(context, 24),
@@ -65,7 +66,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               ResponsiveUtilities.spacing(context),
               Text(
-                'Your pocket accountant for\nSmart budgeting',
+                context.l10n.tagLine,
                 textAlign: TextAlign.center,
                 style: theme.textTheme.titleMedium?.copyWith(
                   color:
@@ -76,7 +77,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               const Spacer(),
               AppButton(
-                label: 'Get Started',
+                label: context.l10n.getStarted,
                 onPressed: () => Navigator.pushNamed(context, '/onboarding'),
                 isEnabled: true,
               ),

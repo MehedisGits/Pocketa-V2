@@ -1,3 +1,4 @@
+import 'package:pocketa_v2/core/constants/app_language.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPrefServices {
@@ -11,11 +12,11 @@ class SharedPrefServices {
     _prefs = await SharedPreferences.getInstance();
   }
 
-  static Future<void> setUserLanguage(String language) async {
-    await _prefs?.setString(_userLanguageKey, language);
+  static Future<void> setUserLanguage(AppLanguage language) async {
+    await _prefs?.setString(_userLanguageKey, language.name);
   }
 
-  static String getUserLanguage() {
+  static String? getUserLanguageCode() {
     return _prefs?.getString(_userLanguageKey) ?? 'en';
   }
 
