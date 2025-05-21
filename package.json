@@ -5,11 +5,16 @@
   "main": "index.js",
   "scripts": {
     "release": "standard-version",
-    "commit": "git-cz"
+    "commit": "GIT_EDITOR=true git-cz"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MehedisGits/Pocketa-V2.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "keywords": [
     "flutter",
@@ -26,6 +31,7 @@
   },
   "homepage": "https://github.com/MehedisGits/Pocketa-V2#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.5.0"
   }
 }
