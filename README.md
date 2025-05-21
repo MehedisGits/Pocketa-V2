@@ -1,5 +1,4 @@
 
-```markdown
 # 📱 Pocketa — Your Pocket Accountant
 
 ![Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?logo=flutter&logoColor=white)
@@ -32,17 +31,15 @@
 
 ## 📸 Screenshots
 
-[//]: # (<p float="left">)
+<p float="left">
 
-[//]: # (  <img src="screenshots/onboarding1.png" width="250" />)
+  <img src="screenshots/onboarding1.png" width="250" />
 
-[//]: # (  <img src="screenshots/dashboard.png" width="250" />)
+  <img src="screenshots/dashboard.png" width="250" />
 
-[//]: # (  <img src="screenshots/analytics.png" width="250" />)
+  <img src="screenshots/analytics.png" width="250" />
 
-[//]: # (</p>)
-
-> ℹ️ Add your actual screenshots in a `screenshots/` folder in your repo.
+</p>
 
 ---
 
@@ -138,4 +135,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 > “Simple tools for powerful financial awareness — that’s the Pocketa promise.” 🇧🇩
 
-```
