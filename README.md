@@ -107,7 +107,7 @@ flutter run
 ## 👨‍💻 Author
 
 **Rakibul Islam Mehedi**  
-🎯 Flutter Developer | Clean Architecture Advocate | Localization & UI/UX Focused  
+🎯 Flutter Developer | Clean Architecture | Local & Cloud storage | Localization & UI/UX Focused  
 📍 Rampal, Bagerhat, Bangladesh
 
 I’m passionate about building purposeful, scalable, and beautiful mobile apps that solve real-life problems — especially for users in Bangladesh. With strong expertise in Flutter, Riverpod, and MVVM architecture, I aim to create local-first solutions that empower users through thoughtful design and robust functionality.
